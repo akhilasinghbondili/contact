@@ -1,0 +1,160 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(./background-color_757542-253.avif) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+    padding-top: 130px;
+}
+
+.contact h2 {
+    font-size: 80px;
+    line-height: 1;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.contact-text h2 span {
+    color: aqua;
+}
+
+.contact h4 {
+    margin: 15px 0;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.contact p {
+    font-size: 21px;
+    color:blanchedalmond;
+    margin-bottom: 2rem;
+    line-height: 30px;
+}
+
+.contact-list {
+    margin-bottom: 3rem;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 19px;
+}
+
+.contact-list i {
+    display: inline-block;
+    color: aqua;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all.40s ease;
+}
+
+.contact-list li:hover {
+    transform: scale(1.01) translateY(-50px);
+    color: aqua;
+}
+
+.contact-icons i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    margin: 30px 10px;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s* var(--i));
+}
+
+.contact-icons i:hover {
+    background-color: aqua;
+    color: #090909;
+    box-shadow: 0px 0px 20px aqua;
+}
+
+.contact-form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: rgb(96, 77, 77);
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 220px;
+}
+
+.contact-form form .send {
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px aqua;
+}
+
+.contact-form .send :hover {
+    box-shadow: 0 0 5px aqua;
+}
+
+.last-text p {
+    width: 100;
+    text-align: center;
+    padding: 25px;
+    background: rgb(7, 85, 91);
+    font-weight: 70px;
+}
+
+.top {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.top i {
+    color: black;
+    background: aqua;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
